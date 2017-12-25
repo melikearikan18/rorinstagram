@@ -48,6 +48,8 @@ group :development do
   gem 'devise'
   gem 'paperclip'
   gem 'activeadmin'
+  gem 'carrierwave'
+
   
 end
 
@@ -58,6 +60,8 @@ group :production do
   gem 'devise'
   gem 'paperclip'
   gem 'activeadmin'
+  gem 'carrierwave'
+
   
 end
 
