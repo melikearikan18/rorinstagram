@@ -49,7 +49,8 @@ group :development do
   gem 'paperclip'
   gem 'activeadmin'
   gem 'carrierwave'
-
+  gem 'mini_magick'
+  gem 'autoprefixer-rails'
   
 end
 
@@ -61,7 +62,8 @@ group :production do
   gem 'paperclip'
   gem 'activeadmin'
   gem 'carrierwave'
-
+  gem 'mini_magick'
+  gem 'autoprefixer-rails'
   
 end
 
