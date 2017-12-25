@@ -1,0 +1,5 @@
+<h1><%= @user.email %>'in Profil</h1>
+
+<%= avatar_for(@user) %>
+<%= @user.descriptions %>
+<%= link_to "Düzenle", edit_user_path(@user) %>

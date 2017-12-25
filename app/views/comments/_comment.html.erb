@@ -1,0 +1,13 @@
+<h4> Toplam <%= @comments.count %> yorum var</h4>
+
+<% @comments.each do |comment| %>
+    <p><b><%= comment.user.email %> </b></p>
+    <p><%= comment.content %></p>
+    
+    <% if current_user == comment.user %>
+        <%= link_to "Yorumu Kaldır", [comment.post, comment], method: :delete %>
+        <%= link_to "Yorumu Düzenle", edit_post_comment_path(comment.post, comment) %>
+    <% end %>
+<% end %>
+
+<%= render 'comments/form' %>
